@@ -6,7 +6,7 @@ class MyGoogleBtn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 335,
+      width: double.infinity,
       height: 50,
       decoration: BoxDecoration(
           border: Border.all(

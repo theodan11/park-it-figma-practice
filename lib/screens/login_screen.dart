@@ -3,6 +3,7 @@ import 'package:park_it/components/my_button.dart';
 import 'package:park_it/components/my_google_btn.dart';
 import 'package:park_it/components/my_label_input_field.dart';
 import 'package:park_it/components/my_text_header.dart';
+import 'package:park_it/screens/reset_password_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -52,11 +53,17 @@ class LoginScreen extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  Text(
-                    "Forgot Password?",
-                    style: TextStyle(
-                        color: Theme.of(context).colorScheme.primary,
-                        fontSize: 14),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (_) => const ResetPassword()));
+                    },
+                    child: Text(
+                      "Forgot Password?",
+                      style: TextStyle(
+                          color: Theme.of(context).colorScheme.primary,
+                          fontSize: 14),
+                    ),
                   )
                 ],
               ),

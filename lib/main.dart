@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:park_it/screens/login_screen.dart';
+import 'package:park_it/screens/reset_password_screen.dart';
 
 import 'package:park_it/screens/splash_screen.dart';
+import 'package:park_it/screens/verify_email_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,6 +24,7 @@ class MyApp extends StatelessWidget {
               secondary: Color(0xFFFFCC56),
               tertiary: Color(0xFFFFFFFF))),
       home: const SplashScreen(),
+      // home: const VerifyEmailScreen(),
     );
   }
 }
